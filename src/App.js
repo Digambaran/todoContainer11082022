@@ -10,7 +10,7 @@ function App() {
   const [refetch, setRefetch] = React.useState(false)
 
   React.useEffect(() => {
-    fetch(`${env.BLOCK_FUNCTION_URL}/listTodos`)
+    fetch(`${env.BLOCK_FUNCTION_URL}/listTodos11082022`)
       .then((res) => res.json())
       .then((data) => {
         setTodos(data ? data.map(({ id, item }) => ({ id, item: item.name })) : [])
